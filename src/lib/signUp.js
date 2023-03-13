@@ -24,14 +24,9 @@ export const signUp = async (email, password) => {
       password,
     })
     // swal('Usuario en la base de datos!');
-    console.log("los credenciales son:", credentialsUser)
     return true;
   } catch (error) {
-    if (error.code === 'auth/email-already-in-use') {
-      swal('El correo ya esta en uso');
-    } else if (error.code === 'auth/weak-password') {
-      swal('La contraseña debe tener 6 digitos como minimo');
-    }
-    return false;
+    const errorCode = error.code;
+    return errorCode;
   }
 };

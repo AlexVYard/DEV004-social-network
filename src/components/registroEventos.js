@@ -23,13 +23,19 @@ export const registroEventos = (onNavigate) => {
     const email = document.getElementById('inputEmail').value;
     const password = document.getElementById('inputPassword').value;
     const estaRegistrado = await signUp(email, password);
-    if (estaRegistrado) {
+    if (estaRegistrado === true) {
       const estaLogueado = await signIn(email, password);
       if (estaLogueado) {
         onNavigate('/timeline');
       } else {
         alert('Error correo o contraseña incorrectos verifiquelos por favor')
       }
+    } else if (estaRegistrado === 'auth/email-already-in-use') {
+      swal('El correo ya esta en uso');
+    } else if (estaRegistrado === 'auth/weak-password') {
+      swal('La contraseña debe tener 6 digitos como minimo');
+    } else {
+      swal('Error desconocido');
     }
   });
 };

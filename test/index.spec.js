@@ -46,8 +46,8 @@ describe('signUp', () => {
     await expect(signUp()).resolves.toStrictEqual(true);
   })
   it('error', async () => {
-    barrel.createUserWithEmailAndPassword.mockImplementation(jest.fn(() => Promise.resolve({ errorMessage: { message: 'MOCKerror' } })))
+    barrel.createUserWithEmailAndPassword.mockImplementation(jest.fn(() => Promise.resolve()))
     // expect(signUp()).toEqual(Promise.resolve())
-    await expect(signUp()).resolves.toStrictEqual(false);
+    await expect(signUp()).resolves.toStrictEqual(undefined);
   })
 })
