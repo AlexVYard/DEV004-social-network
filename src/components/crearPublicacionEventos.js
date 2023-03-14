@@ -1,5 +1,5 @@
 /* eslint-disable no-undef */
-import { firebaseCrearPublicacion } from '../lib/firebasePublicaciones';
+import { firebaseCrearPublicacion } from '../lib/firebasePublicaciones.js';
 
 // eventos del crear publicacion-dom
 export const crearPublicacionEventos = (onNavigate) => {
