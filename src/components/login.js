@@ -3,7 +3,7 @@ export const login = () => {
   root.innerHTML = `
     <main class="PantallaInicio">
       <section class="cajaInicio">
-        <img src="../img/img_libro_rojo.png" alt="Imagen de libro">
+        <img src="./DEV004-social-network/src/img/img_libro_rojo.png" alt="Imagen de libro">
         <input type="text" placeholder=" Correo Electronico" id="inputEmail">
         <p id="textoCorreoInvalido" class="textoCorreoInvalido">Escribe un correo valido</p>
         <input type="password" placeholder=" Contraseña" id="inputPassword">
