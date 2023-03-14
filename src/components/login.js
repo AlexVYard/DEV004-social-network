@@ -1,18 +1,20 @@
 export const login = () => {
   const root = document.getElementById('pantallaMostrada');
-  root.innerHTML = `
-    <main class="PantallaInicio">
-      <section class="cajaInicio">
-        <img src="./DEV004-social-network/src/img/img_libro_rojo.png" alt="Imagen de libro">
-        <input type="text" placeholder=" Correo Electronico" id="inputEmail">
-        <p id="textoCorreoInvalido" class="textoCorreoInvalido">Escribe un correo valido</p>
-        <input type="password" placeholder=" Contraseña" id="inputPassword">
-        <button id="botonInicio">Ingresar</button>
-        <hr style="width:100%;text-align:center">
-        <button id="botonInicioGoogleLogin"><img src="./img/btn_google_signin.png" alt="boton de google" class="imgButton"></button>
-        <p class="textoCrearCuenta">¿No tienes una cuenta?
-        <a id="botonRegistrar" href="#" onclick="console.log('hola mundo')"> Registrate</a></p>
-      </section>
-    </main>
-  `;
+  const pantallaInicio = document.createElement('main')
+  const cajaInicio = document.createElement('section')
+  const imagenFondo = document.createElement('img')
+  const inputEmail = document.createElement('input')
+
+  pantallaInicio.className = "PantallaInicio";
+  cajaInicio.className = "cajaInicio";
+  imagenFondo.src = "./img/img_libro_rojo.png"
+  imagenFondo.alt = "Imagen de libro"
+  inputEmail.type = "text"
+  inputEmail.placeholder = " Correo Electronico"
+  inputEmail.id = "inputEmail"
+  
+  root.appendChild(pantallaInicio)
+  pantallaInicio.appendChild(cajaInicio)
+  cajaInicio.appendChild(imagenFondo)
+  cajaInicio.appendChild(inputEmail)
 };
