@@ -2,7 +2,7 @@
 /* eslint-disable no-undef */
 import { 
   firebaseLeerPublicacion, deletePub, firebaseDarLike, firebaseQuitarLike, 
-} from '../lib/firebasePublicaciones.js';
+} from '../lib/firebasePublicaciones';
 import { getTask, actualizarDB } from "../firebaseConfig.js";
 
 // eventos del muro(time-line)
