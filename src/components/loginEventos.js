@@ -37,5 +37,15 @@ export const loginEventos = (onNavigate) => {
     } else {
       swal('Error: Correo o contraseña incorrecto.');
     }
+
+    /*
+    signIn(email, password).then( (estaLogueado) => {
+      if (estaLogueado) {
+        onNavigate('/timeline');
+      } else {
+        swal('Error: Correo o contraseña incorrecto.');
+      }    
+    });
+    */
   });
 };
