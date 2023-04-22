@@ -1,5 +1,5 @@
 # Creando una Red Social
-El proyecto puede ser visualizado aqui: ["LEEME"](https://socialnetworkyesica.netlify.app/)
+El proyecto puede ser visualizado aquí: ["LEEME"](https://socialnetworkyesica.netlify.app/)
 ## 1. Resumen del proyecto
 
 En este proyecto se construyo una Red Social,titulada **"Leeme"**. La cual trata sobre opiniones de lectores.
